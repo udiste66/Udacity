@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>IPND Notes</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <h1>Introduction to Programming Nanodegree Notes</h1>
+      <div>
+        <h2 class="lesson">The Basics of the Web and HTML</h2>
+          <div class="paragraph_block">
+            <span class="paragraph_title">Overview of the Internet</span>
+              <p>
+                The Web is a network of computers. There are at least 4 concepts that are necessary to understand how it works:
+              </p>
+              <ol class="lists">
+                <li><b>Browsers</b></li>
+                <li><b>The Internet</b></li>
+                <li><b>HTTP</b></li>
+                <li><b>Servers</b></li>
+              </ol> 
+              <p>
+                Put in simple terms, users interface themselves with the internet though a web browser. From there they are able to send HTTP protocol requests that will travel through the internet to reach a server where the requested document is stored. 
+              </p>
+              <p>
+                The server finds the appropriate HTML document and sends it back to the user's computer where a web browser interprets the page and displays it on the user's screen.
+              </p>
+          </div>
+          <div class="paragraph_block">
+            <span class="paragraph_title">What is a Web Page</span>
+              <p>
+                A web page is a text document written in a language called HTML. Web browsers read these documents, and then interpret and display them.
+              </p>
+              <p>
+                Basic HTML Vocabulary that will be useful to remember:
+              </p>
+              <ol class="lists">
+                <li> <b>Tag</b> An HTML tag is always contained within angled brackets. Most tags have an opening tag (&lt;p&gt; for example) and a closing tag, (&lt;/p&gt;). Some tags (called "void" tags) do not require a closing tag (like the &lt;br&gt; tag). </li>
+                <li><b>Element</b> An HTML element refers to everything within a set of opening and closing tags. </li>
+                <li><b>Attribute</b>  This is a property of an HTML element. For example, to set the hrefattribute of an anchor tag to the Udacity URL, you would write &lt;a href="www.udacity.com"&gt; </li>
+              </ol> 
+          </div>
+          <div class="paragraph_block">
+            <span class="paragraph_title">What is HTML</span>
+              <p>
+                <b>HMTL</b> stands for <em>Hypertext Markup Language.</em> HTML documents form the majority of the content on the web and usually contain <em>Text and Markups</em> as well as references to other documents and links to other pages.
+              </p>
+          </div>
+      </div>
+      <div>
+        <h2 class="lesson">Creating a Structured Document</h2>
+          <div class="paragraph_block">
+            <span class="paragraph_title">HTML, CSS and Javascript </span>
+              <p> Html, CSS and JS are the three languages that web development is based on, each one has different purposes, but in this course we’ll cover only Html and CSS.
+              <br><br>Html and CSS change over time, but learning their basic principles will allow us to learn new techniques much faster as they tend not to change over time.
+              <br><br>HTML files are the structure of a webpage, imagine the walls of our home. CSS files define the Style, or what color the walls are in our analogy. Javascript files are the interactive components.
+              </p>
+          </div>
+          <div class="paragraph_block">
+            <span class="paragraph_title">Developer Tools </span>
+              <p> Some browser, specifically Chrome, have some built in futures called <em>Developer Tools</em> that allow us to see, and modify if we want, the structure of a webpage in Html and CSS code. 
+              <br><br>We can also inspect whatever element we want on the website, and the browser will highlight which code generates that element in the developer tool.
+              </p>
+          </div>
+          <div class="paragraph_block">
+            <span class="paragraph_title"> DOM </span>
+              <p> DOM or <em>Document Object Model</em>, are the tree structure of a webpage or how the browser interprets code to actually create the webpage structure.
+              <br><br>To render a document such as an HTML page, most web browsers use an internal model similar to the DOM. The nodes of every document are organized in a tree structure, called the DOM tree.
+              <br><br>HTML being the language of the web, has its specific syntax and rules, the basic word in the html language is a tag, which the browser turns into elements that then form the DOM tree.
+              <br><br>A tag can also have attributes with values.
+              <br><br>CSS has also syntax and rules, but does not impact the structure of the website but the rules, for example we can specify that every element belonging to a specific class ‘’x’’ will have a specific color and so on.
+              </p>
+          </div>
+          <div class="paragraph_block">
+            <span class="paragraph_title"> Boxes </span>
+              <p> The structure of a website is entirely composed of boxes. This is easy to identify when playing arounf with the developer tool in the browser, highliting an element will highlight the entire box. 
+              <br><br>No matter what shape it contains, it can be a circle like the example in the lesson, the form of the element and the space it occupies in the webpage is a box or a rectangle.
+              <br>All of these boxes put together compose the structure of the website.
+              </p>
+          </div>
+      </div>
+      <div>
+        <h2 class="lesson">Adding CSS Style to HTML Structure</h2>
+          <div class="paragraph_block">
+            <span class="paragraph_title">How does CSS control HTML?</span>
+              <p> We can either assign a style through CSS to any HTML element like h1, h2, p etc. which will then be the ''selectors'', and this is fine if we want every one of a certain element to have the same style but if we want to have h1's with different styles we will have to use classes, in which case we will be dealing with class selectors. 
+              </p>
+          </div>
+          <div class="paragraph_block">
+            <span class="paragraph_title">How can I include styling to my webpage with CSS?</span>
+              <p> There are 3 methods for this but I will only note down 2 because the third is messy and complicated, I don't need that.
+              <br><br>The first method is to write it directly in the ''head'' of our HTML file by opening a ''style'' tag.
+              <br><br>The second method and the one that seems to make more sense to me, also because it's cleaner, is to have a separate CSS file containing the CSS code, which is then linked to our HTML file.
+              </p>
+          </div>
+          <div class="paragraph_block">
+            <span class="paragraph_title">Positioning and resizing boxes</span>
+              <p>It is good to build a habit of defining sizes in percentages rather than pixels, that way the boxes can resize themselves depending on the situation.
+              <br><br>To position them, we have the option of using, <em>display: flex
+              </em> which will override CSS's default behaviour and position the boxes next to each other.
+              </p>
+          </div>
+      </div>
+      <!-- <div>
+        <h2 class="lesson">Adding a Picture to my Notes in order to meet Specifications</h2>
+          <div class="paragraph_block">
+              <center><img src="pic.png" alt="My Cousin Gipsy can't be displayed" width="pixels"></center>
+          </div>
+      </div> -->
+      <div>
+       <h2 class="lesson">Introduction to Serious Programming</h2>
+        <div class="paragraph_block">
+          <span class="paragraph_title">Computer Science and Programming</span>
+            <p> 
+            Computer Science is about how to solve problems, breaking them into smaller pieces and then precisely and mechanically describing the steps that can be used to solve each piece, and those steps can be executed by a computer.
+            <br><br>Programming is at the core of computer science, a computer can be programmed to do almost anything and do it extremely fast.
+            <br><br>Machines on the other hand, are able to do only one thing, or very few things at the most, but if they're not programmed correctly, computers can be less useful than machines.
+            </p>
+        </div>
+        <div class="paragraph_block">
+          <span class="paragraph_title">Programming Languages</span>
+            <p> 
+            Programming languages is what programmers use to give instructions to the computer by writing programs.
+            <br><br>In this course we will focus on one in particular, which is Python, Python is also what is also called a <em>high level language</em>.
+            </p>
+        </div>
+        <div class="paragraph_block">
+          <span class="paragraph_title">Why do we need programming languages?</span>
+            <p> 
+            Considering their purpose programminf languages have several advantages over natural languages, mainly they are better at avoiding these two things:
+            </p>
+              <ol class="lists">
+                  <li><em>Ambiguity</em>, the computer needs to interpret the input of the programmer, and interpret them exactly the way the programmer intended. Some words in English for example can have 2 meanings, like the word ‘’biweekly’' this ambiguity can’t be allowed in a programming language.</li>
+                  <li><em>Verbosity</em>, natural languages are verbose, meaning a lot of text is necessary to describe a complicated thing, not true for programming languages like Python.</li>
+              </ol>
+        </div>
+        <div class="paragraph_block">
+          <span class="paragraph_title">Python</span>
+            <p> 
+            We said in the previous paragraph that Python is a high level programming language, but what it really is for the computer is an interpreter, so Python itself is also a program.
+            <br><br>The programs that we will write won't run directly on the computer, but be the input to the Python program which then runs on the computer.
+            </p>
+        </div>
+        <div class="paragraph_block">
+          <span class="paragraph_title">Python Expressions</span>
+            <p>A Python "expression" is a legal Python statement. For example: ''print 1 + 1'' is a valid expression, but ''print 1 + '' is not. The python grammar for arithmetic expressions is explained below:
+            </p>
+              <ol class="lists">
+                  <li>Expression = Expression-Operator-Expression OR Number</li>
+                  <li>Operator = +,-,*,/ etc...</li>
+                  <li>Number = 0,1,2 etc...</li>
+              </ol>
+            <p>So expressions can be replaced either by a number or another expression, the expression is not done until we've reached all the terminals.
+            <br><br>Also worth nothing that Python does something called integer division which means it ignores the decimal part of the answer. 
+            <br><br>To force Python to give you an answer including a decimal, you need to make one of the numbers into a decimal by putting a decimal point after it.
+        </div>
+      </div>
+      <div>
+        <h2 class="lesson">Variables and Strings</h2>
+          <div class="paragraph_block">
+            <span class="paragraph_title">What Is a Variable?</span>
+              <p> 
+              Variables give programmers a way to give names to values. 
+              <br>If <b>my_variable</b> is a variable with a value of <b>2</b>, then the following code would print out <b>4</b>:<br>
+              <b>print my_variable + my_variable</b>
+              </p>
+          </div>
+          <div class="paragraph_block">
+            <span class="paragraph_title">How to assign a value to a variable</span>
+              <p> 
+              We can assign the value <b>2</b> to the variable <b>my_variable</b> by writing code like this: 
+              <br><b>my_variable = 2</b> 
+              <br><br>We can even change the value of a variable by re-assigning it to a different value later.
+              </p>
+          </div>
+          <div class="paragraph_block">
+            <span class="paragraph_title">The difference between what the equals ''='' means in math versus in programming.</span>
+              <p> 
+              In the line <b>2 + 3 = 5</b>, the equals sign means "is the same as".
+              <br><br>In the line <b>my_variable = 5</b>, the equals sign means "takes the value of".
+              </p>
+          </div>
+          <div class="paragraph_block">
+            <span class="paragraph_title">The difference between Numbers and Strings</span>
+              <p> In Python, <b>2</b> is a number while <b>"2"</b> is a string.
+              <br><br>The code <b>2 + 2</b> would give <b>4</b>.
+              <br><br>The code <b>"2" + "2"</b> would give <b>"22"</b>.
+              </p>
+          </div>
+      </div>
+    </body>
+  </html>
